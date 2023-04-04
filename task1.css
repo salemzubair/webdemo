@@ -1,0 +1,284 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+
+
+}
+.ms{
+    margin-top: 0.3rem;
+}
+.fc{
+    display: flex;
+    flex-direction: column;
+}
+.fr{
+    display: flex;
+    flex-direction: row;
+}
+
+#wrapper{
+    width: 100vw;
+    min-height: 10%;
+    background-color:#F6F5F5;
+}
+
+#header{
+    width: 100%;
+    background-color:#373d42;
+    justify-content: space-between;
+    padding: 1rem;
+  
+    align-items:center ;
+}
+
+#img{
+    height: 2rem;
+    width: 3rem;
+    padding-right: 0.5rem;
+}
+
+#left   ul li ,#right ul li { 
+list-style-type:none;
+align-items: center;
+font-size: 1rem;
+
+
+
+}
+#left{
+    justify-content: center;
+    align-items:center ;
+    color: white;
+    display: flex;
+
+}
+#right{
+    justify-content: center;
+    align-items:center ;
+    color: white;
+    display: flex;
+
+}
+
+#leftlist{
+    gap: 1rem;
+}
+#rightlist{
+    gap: 1rem;
+}
+
+#inpsearch{
+    border: none;
+    padding: 0.4rem;
+    width: 20rem;
+    border-radius: 0.2rem;
+  
+}
+#navbar-parent{
+    width: 100%;
+    background-color: #262D33;
+
+}
+#navbar{
+    width: 80%;
+    padding: 0.5rem;
+    color: white;
+    margin: auto;
+
+}
+#navbar ul{
+list-style-type: none;
+text-decoration: none;
+}
+
+#navlist{
+    gap: 2rem;
+}
+
+#navlist li span{
+    background-color: red;
+    padding: 0.5rem;
+}
+#content-div{
+    width: 85%;
+    padding: 1rem;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+#editorspick{
+    font-size: 2rem;
+    color: #4C4B4B;
+    padding: 0rem 0rem 0.5rem 0rem;
+}
+#betterux{
+    color: #4C4B4B;
+    font-size: 1.3rem;
+    padding: 0rem 0rem 2rem 0rem;
+}
+
+.cards{
+    width: 30rem;
+    padding: 1rem;
+    /* min-height: 18rem; */
+    /* border: 1px solid black; */
+   background-color: white;
+   margin-bottom: 2rem;
+    
+}
+
+#main-cards{
+    width: 85%;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cards-img{
+
+    width: 100%;
+    /* border: 1px solid red ; */
+ }
+
+ .pic{
+    width: 100%;
+    height: auto;
+ }
+
+ .content{
+    width: 100%;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+   padding: 1.2rem 0.4rem 0.5rem 0.4rem;
+   background-color: white;
+ }
+
+ .bundle{
+    font-size: 1.2rem;
+    font-weight:bold ;
+    font-family: sans-serif;
+ }
+
+ .price{
+    font-size: 1.2rem;
+    color:gray;
+ }
+ .content-left{
+    justify-content: flex-start;
+
+ }
+ .content-right{
+    justify-content: flex-end;
+
+ }
+
+ /* media query for 768px t0 1024px */
+ @media only screen  and (min-width:768px) and (max-width:1025px) {
+
+    #wrapper {
+        width: 115vw;
+       
+    }
+    #inpsearch {
+      
+     
+        width: 11rem;
+   
+    }
+    #navlist{
+        flex-direction: column;
+    }
+    #navlist > li{
+   align-items: center;
+        
+    }
+    .cards{
+        width: 28rem;
+    }
+    #main-cards{
+        justify-content: center;
+    }
+ }
+
+ /* media query for  425px  to 765px */
+ @media only screen  and (min-width:425px) and (max-width:767px) {
+    #wrapper {
+        width: 202vw;
+    }
+    #navlist{
+        flex-direction: column;
+       
+    }
+    .cards{
+        width:22rem;
+    }
+
+    #right{
+        margin-right: 1rem;
+    }
+ }
+
+ /* media query for 320px t0 425px */
+ @media only screen  and (min-width:320px) and (max-width:425px) {
+
+    #inpsearch {
+       
+        width: 10rem;
+       
+    }
+    #wrapper{
+        width: 205%;
+    }
+    #navlist{
+        flex-direction: column;
+        font-size:1.2rem;
+    }
+    .cards{
+        width: 48rem;
+    }
+    #editorspick {
+     font-size: 3rem;
+    }
+    #betterux {
+        font-size: 1.9rem;
+    }
+    #img {
+        height: 4rem;
+        width: 5rem;
+       padding: 0.5rem;
+    }
+
+  
+    #left ul li {
+      
+     
+        font-size: 1.7rem;
+    }
+      #right ul li {
+      
+     
+        font-size: 1.7rem;
+    }
+  #header{
+    flex-direction: column;
+  }
+  #left{
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  #leftlist {
+    gap: 4rem;
+}
+#rightlist {
+    gap: 5rem;
+    flex-direction: inherit;
+}
+#right{
+    margin-top: 1rem;
+}
+
+ }
